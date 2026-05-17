@@ -1,0 +1,134 @@
+.about {
+  padding: 80px 70px 0;
+  text-align: center;
+
+  /* TWO COLOR BACKGROUND */
+  background: linear-gradient(
+    to bottom,
+    #041b42 0%,
+    #041b42 60%,
+    #f2f2f2 60%,
+    #f2f2f2 100%
+  );
+}
+
+/* TOP CONTENT */
+
+.about-top {
+  max-width: 900px;
+  margin: auto;
+}
+
+.small-title {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.about h2 {
+  color: white;
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.description {
+  color: #e7e7e7;
+  line-height: 1.8;
+  max-width: 850px;
+  margin: auto;
+}
+
+/* BUTTON */
+
+.about button {
+  margin-top: 30px;
+  padding: 12px 30px;
+
+  border: none;
+  border-radius: 25px;
+
+  background: white;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.about button:hover {
+  background: #ddd;
+}
+
+/* CONTENT AREA */
+
+.about-content {
+  position: relative;
+
+  margin-top: 140px;
+  padding-bottom: 120px;
+}
+
+/* STATS CARD */
+
+.stats {
+  position: absolute;
+
+  width: 568px;
+  min-width: 568px;
+  height: 172px;
+
+  top: -20px;
+  left: 110px;
+
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+
+  padding: 28px 30px;
+
+  border-radius: 8px;
+  border: 1px solid black;
+
+  background: #a3a9f0;
+}
+
+/* BOX */
+
+.box h3 {
+  margin: 0;
+  font-size: 38px;
+}
+
+.box p {
+  margin-top: 10px;
+}
+
+/* IMAGES */
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+/* Temple image */
+
+.images img:first-child {
+  width: 464px;
+  height: 506px;
+  margin-top: 95px;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+/* Industry image */
+
+.images img:last-child {
+  width: 465px;
+  height: 506px;
+  min-width: 300px;
+  border: 1px solid black;
+  object-fit: cover;
+}
