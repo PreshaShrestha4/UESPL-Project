@@ -2,9 +2,25 @@ import "./Hero.css";
 
 import heroBg from "../../assets/hero-bg.png";
 
-import img1 from "../../assets/project1.png";
-import img2 from "../../assets/project2.png";
-import img3 from "../../assets/project3.png";
+import project1 from "../../assets/project1.png";
+import project2 from "../../assets/project2.png";
+import project3 from "../../assets/project3.png";
+import project4 from "../../assets/project4.png";
+import project5 from "../../assets/project5.png";
+import project6 from "../../assets/project6.png";
+import project7 from "../../assets/project7.png";
+import project8 from "../../assets/project8.png";
+
+const images = [
+  project1,
+  project2,
+  project3,
+  project4,
+  project5,
+  project6,
+  project7,
+  project8,
+];
 
 const Hero = () => {
   return (
@@ -26,18 +42,14 @@ const Hero = () => {
           <button>Get in Touch</button>
         </div>
 
-        {/* PROJECT IMAGES */}
-        <div className="hero-projects">
-          <div className="project-card">
-            <img src={img1} alt="Project 1" />
-          </div>
-
-          <div className="project-card">
-            <img src={img2} alt="Project 2" />
-          </div>
-
-          <div className="project-card">
-            <img src={img3} alt="Project 3" />
+        {/* SLIDER */}
+        <div className="slider-wrapper">
+          <div className="slider-track">
+            {[...images, ...images].map((img, index) => (
+              <div className="project-card" key={index}>
+                <img src={img} alt="" />
+              </div>
+            ))}
           </div>
         </div>
       </div>

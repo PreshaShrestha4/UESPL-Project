@@ -4,12 +4,11 @@
   min-height: 100vh;
 
   background-size: cover;
-  background-position: center;
-
-  display: flex;
-  align-items: center;
+  background-position: center 60%;
 
   overflow: hidden;
+
+  padding-bottom: 120px;
 }
 
 /* DARK OVERLAY */
@@ -30,37 +29,31 @@
   max-width: 1300px;
   margin: auto;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  padding-top: 120px;
+  padding-top: 180px;
 }
 
 /* TEXT */
 
 .hero-text {
-  max-width: 900px;
   color: white;
+  max-width: 950px;
 }
 
 .hero-text h2 {
-  font-size: 50px;
-  font-weight: 600;
+  font-size: 60px;
   margin-bottom: 10px;
 }
 
 .hero-text h1 {
-  font-size: 58px;
+  font-size: 62px;
   line-height: 1.1;
+
   margin-bottom: 20px;
 }
 
 .hero-text p {
-  font-size: 22px;
-  color: #d6d6d6;
-  max-width: 850px;
-  line-height: 1.6;
+  font-size: 24px;
+  color: #ddd;
 
   margin-bottom: 30px;
 }
@@ -75,25 +68,42 @@
   background: white;
   color: black;
 
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
 
   cursor: pointer;
+
   transition: 0.3s;
 }
 
 .hero-text button:hover {
-  background: #dcdcdc;
+  background: #ddd;
 }
 
-/* PROJECTS */
+/* =========================
+   SLIDER
+========================= */
 
-.hero-projects {
-  margin-top: 70px;
+.slider-wrapper {
+  width: 100vw;
+  overflow: hidden;
 
+  margin-top: 90px;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider-track {
   display: flex;
-  gap: 25px;
+  gap: 24px;
+
+  width: max-content;
+
+  animation: premiumLoop 8s infinite;
 }
+/* IMAGE CARD */
 
 .project-card {
   width: 388px;
@@ -108,6 +118,40 @@
 .project-card img {
   width: 100%;
   height: 100%;
+
   object-fit: cover;
   display: block;
+
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* PERFECT LOOP EFFECT */
+
+@keyframes premiumLoop {
+  /* START WITH SLOW MOVEMENT */
+  0% {
+    transform: translateX(0);
+    animation-timing-function: ease-in-out;
+  }
+
+  /* SMALL PAUSE AT PROJECT1 */
+  6% {
+    transform: translateX(0);
+    animation-timing-function: ease-in;
+  }
+
+  /* SLOW START */
+  15% {
+    transform: translateX(-5%);
+    animation-timing-function: linear;
+  }
+
+  /* FAST CONTINUOUS SLIDE */
+  100% {
+    transform: translateX(calc(-50% - 12px));
+  }
 }
