@@ -4,6 +4,7 @@ import About from "./components/home/About";
 import WhyChooseUs from "./components/home/WhyChooseUs";
 import SpecialMessage from "./components/home/SpecialMessage";
 import Projects from "./components/home/Projects";
+import Services from "./components/home/Services";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <WhyChooseUs />
       <SpecialMessage />
       <Projects />
+      <Services />
     </>
   );
 }
