@@ -1,13 +1,13 @@
 import "./Projects.css";
 import { useRef } from "react";
 
-import project9 from "../../assets/project9.png";
-import project10 from "../../assets/project10.png";
-import project11 from "../../assets/project11.png";
-import project12 from "../../assets/project12.png";
-import project13 from "../../assets/project13.png";
-import project14 from "../../assets/project14.png";
-import project15 from "../../assets/project15.png";
+import project9 from "../../assets/project/project9.png";
+import project10 from "../../assets/project/project10.png";
+import project11 from "../../assets/project/project11.png";
+import project12 from "../../assets/project/project12.png";
+import project13 from "../../assets/project/project13.png";
+import project14 from "../../assets/project/project14.png";
+import project15 from "../../assets/project/project15.png";
 
 const Projects = () => {
   const sliderRef = useRef(null);
