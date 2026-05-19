@@ -60,10 +60,6 @@
   position: relative;
 
   width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* WRAPPER */
@@ -72,9 +68,22 @@
   display: flex;
   gap: 24px;
 
-  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
 
-  overflow: hidden;
+  scroll-behavior: smooth;
+
+  padding-bottom: 10px;
+}
+
+/* HIDE SCROLLBAR */
+
+.projects-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.projects-wrapper {
+  scrollbar-width: none;
 }
 
 /* CARD */
@@ -99,25 +108,41 @@
   display: block;
 }
 
-/* BUTTONS */
-
+/* ARROW BUTTONS */
 .slider-btn {
   position: absolute;
+  top: 50%;
 
-  width: 64px;
-  height: 64px;
+  transform: translateY(-50%);
+
+  width: 48px;
+  height: 48px;
 
   border-radius: 50%;
 
-  border: 2px solid #111;
-
+  border: 2px solid black;
   background: white;
 
-  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   cursor: pointer;
 
-  z-index: 10;
+  z-index: 20;
+
+  font-size: 22px;
+  font-weight: 500;
+
+  color: black;
+
+  transition: 0.3s ease;
+}
+
+/* HOVER */
+
+.slider-btn:hover {
+  color: black;
 }
 
 /* LEFT */
@@ -149,4 +174,10 @@
   font-weight: 600;
 
   cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  transform: translateY(-2px);
 }
