@@ -2,6 +2,7 @@
   width: 100%;
   padding: 70px 0;
   background: #a8a9f4;
+
   overflow: hidden;
 }
 
@@ -11,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   gap: 140px;
 
   margin-bottom: 60px;
@@ -19,7 +21,9 @@
 .bank-title h2 {
   font-size: 34px;
   font-weight: 500;
-  color: #1d1d1d;
+
+  color: #111;
+
   letter-spacing: 1px;
 }
 
@@ -37,58 +41,82 @@
   overflow: hidden;
 }
 
+/* TRACK */
+
 .slider-track {
   display: flex;
   align-items: center;
 
+  gap: 55px;
+
   width: max-content;
 
-  animation: bankSlide 16s infinite;
+  animation: scrollLeft 11s infinite;
 }
 
-/* LOGOS */
+@keyframes scrollLeft {
+  /* START */
+  0% {
+    transform: translateX(0);
+  }
+
+  /* FAST MOVE */
+  82% {
+    transform: translateX(-50%);
+  }
+
+  /* SLOW */
+  92% {
+    transform: translateX(-52%);
+  }
+
+  /* STOP AT BANK1 */
+  97% {
+    transform: translateX(-52%);
+  }
+
+  /* RESTART */
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* LOGO */
 
 .logo-box {
   flex-shrink: 0;
 
-  width: 240px; /* bigger */
-  margin-right: 50px;
+  width: 260px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
 }
 
 .logo-box img {
   width: 100%;
-  height: 85px;
+  height: 100%;
 
   object-fit: contain;
+
+  display: block;
+
+  filter: brightness(1.02) contrast(1.1);
+
+  mix-blend-mode: darken;
 }
 
-/* FAST → SLOW → STOP → RESTART */
+/* ONLY LEFT CONTINUOUS */
 
-@keyframes bankSlide {
-  /* start fast */
-  0% {
+@keyframes scrollLeft {
+  from {
     transform: translateX(0);
-    animation-timing-function: linear;
   }
 
-  /* smooth fast movement */
-  70% {
-    transform: translateX(-50%);
-    animation-timing-function: ease-out;
-  }
-
-  /* becomes slower */
-  85% {
-    transform: translateX(-58%);
-  }
-
-  /* stop */
-  93% {
-    transform: translateX(-58%);
-  }
-
-  /* restart */
-  100% {
-    transform: translateX(0);
+  to {
+    transform: translateX(-30%);
   }
 }
