@@ -6,6 +6,7 @@ import SpecialMessage from "./components/home/SpecialMessage";
 import Projects from "./components/home/Projects";
 import Services from "./components/home/Services";
 import BankSlider from "./components/home/BankSlider";
+import ContactSection from "./components/home/ContactSection";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Projects />
       <Services />
       <BankSlider />
+      <ContactSection />
     </>
   );
 }
