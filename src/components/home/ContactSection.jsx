@@ -23,7 +23,7 @@ export default function ContactSection() {
 
           <p className="description">
             Connect with our expert team today to discuss your requirements and
-            discover how our multidisciplinary expertise can add value to your
+            discover how our multidisciplinary expertise can add value to you
             next development.
           </p>
 
@@ -53,9 +53,7 @@ export default function ContactSection() {
           <img src={logo} alt="" />
 
           <h3>
-            USHA ENGINEERING SERVICE (P.)
-            <br />
-            LTD.
+            USHA ENGINEERING SERVICE (P.) <span>LTD.</span>
           </h3>
         </div>
       </div>
