@@ -68,7 +68,7 @@ const BankSlider = () => {
       <div className="slider-container">
         <div className="slider-track">
           {[...banks, ...banks].map((bank, index) => (
-            <div className="logo-box" key={index}>
+            <div className="bank-logo-box" key={index}>
               <img src={bank} alt="" />
             </div>
           ))}

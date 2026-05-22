@@ -46,7 +46,7 @@ const Hero = () => {
         <div className="slider-wrapper">
           <div className="slider-track">
             {[...images, ...images].map((img, index) => (
-              <div className="project-card" key={index}>
+              <div className="hero-card" key={index}>
                 <img src={img} alt="" />
               </div>
             ))}

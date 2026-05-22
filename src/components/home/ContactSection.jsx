@@ -11,7 +11,7 @@ export default function ContactSection() {
       <div className="contact-content">
         {/* Left Side */}
         <div className="contact-left">
-          <div className="small-title">
+          <div className="contact-title">
             <span className="line"></span>
             <p>Contact Us</p>
           </div>
@@ -21,7 +21,7 @@ export default function ContactSection() {
             With Us!
           </h1>
 
-          <p className="description">
+          <p className="paragraph">
             Connect with our expert team today to discuss your requirements and
             discover how our multidisciplinary expertise can add value to you
             next development.

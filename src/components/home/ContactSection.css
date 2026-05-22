@@ -1,4 +1,4 @@
-.small-title p {
+.contact-title p {
   font-size: 32px;
   color: #000;
   font-weight: 600;
@@ -28,7 +28,7 @@
   justify-content: center;
 }
 
-.small-title {
+.contact-title {
   display: flex;
   align-items: center;
   gap: 14px;
@@ -41,11 +41,11 @@
   background: black;
 }
 
-.small-title p {
+.contact-title p {
   font-size: 30px;
   font-weight: 600;
   color: black;
-  margin: 0; /* important */
+  margin: 0;
 }
 
 .contact-left h1 {
@@ -55,7 +55,7 @@
   margin: 0 0 25px 0;
 }
 
-.description {
+.paragraph {
   width: 100%;
   line-height: 1.8;
   color: #666;
