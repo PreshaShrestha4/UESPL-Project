@@ -7,6 +7,8 @@ import Projects from "./components/home/Projects";
 import Services from "./components/home/Services";
 import BankSlider from "./components/home/BankSlider";
 import ContactSection from "./components/home/ContactSection";
+import Contact from "./components/home/Contact";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Services />
       <BankSlider />
       <ContactSection />
+      <Contact />
+      <Footer />
     </>
   );
 }
