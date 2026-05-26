@@ -2,6 +2,7 @@ import AboutHero from "./AboutHero";
 import About from "../../components/home/About";
 import DirectorMessage from "./DirectorMessage";
 import WhyChooseUs from "../../components/home/WhyChooseUs";
+import TeamSection from "./TeamSection";
 
 const AboutUs = () => {
   return (
@@ -10,6 +11,7 @@ const AboutUs = () => {
       <About />
       <DirectorMessage />
       <WhyChooseUs />
+      <TeamSection />
     </>
   );
 };
