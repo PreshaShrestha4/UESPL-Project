@@ -16,7 +16,7 @@ import ContactHome from "./components/home/Contact";
 
 /* PAGES */
 import AboutUs from "./pages/AboutUs/AboutUs";
-// import Projects from "./pages/Projects";
+import Projects from "./pages/Projects/ProjectsPage";
 // import Services from "./pages/Services";
 // import Contact from "./pages/Contact";
 
@@ -49,10 +49,10 @@ function App() {
         <Route path="/" element={<Home />} />
 
         <Route path="/about" element={<AboutUs />} />
-        {/* 
+
         <Route path="/projects" element={<Projects />} />
 
-        <Route path="/services" element={<Services />} />
+        {/* <Route path="/services" element={<Services />} />
 
         <Route path="/contact" element={<Contact />} /> */}
       </Routes>
