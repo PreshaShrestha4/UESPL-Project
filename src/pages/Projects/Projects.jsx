@@ -11,6 +11,12 @@ const projectData = {
     "/src/assets/Commercial/C6.png",
     "/src/assets/Commercial/C7.png",
   ],
+  Hospital: [
+    "/src/assets/Hospital/H1.png",
+    "/src/assets/Hospital/H2.png",
+    "/src/assets/Hospital/H3.png",
+    "/src/assets/Hospital/H4.png",
+  ],
 };
 
 const tabs = Object.keys(projectData);
