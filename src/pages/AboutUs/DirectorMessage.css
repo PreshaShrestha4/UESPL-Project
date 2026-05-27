@@ -83,10 +83,10 @@
 
 .message {
   color: white;
+  font-weight: 500;
+  font-size: 24px;
 
-  font-size: 28px;
-
-  line-height: 1.7;
+  line-height: 119%;
 
   margin-bottom: 70px;
 }
@@ -95,40 +95,29 @@
 
 .info-box {
   display: flex;
-
   align-items: flex-start;
-
-  gap: 20px;
-
+  gap: 50px;
   margin-bottom: 45px;
 }
 
 .info-box img {
   width: 45px;
   height: 45px;
-
   margin-top: 5px;
 }
 
 .info-box h3 {
   color: white;
-
-  font-size: 38px;
-
+  font-size: 25px;
   font-family: Georgia, serif;
-
   margin-bottom: 6px;
 }
 
 .info-box p {
   color: #d4d8e5;
-
-  font-size: 15px;
-
+  font-size: 12px;
   text-transform: uppercase;
-
-  line-height: 1.8;
-
+  line-height: 1.6;
   max-width: 500px;
 }
 

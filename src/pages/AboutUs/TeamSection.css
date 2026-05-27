@@ -22,11 +22,8 @@
 .team-header {
   width: 90%;
   height: 80px;
-
   background: #071a38;
-
   border-radius: 100px;
-
   display: flex;
   justify-content: center;
   align-items: center;

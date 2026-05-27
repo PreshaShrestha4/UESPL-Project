@@ -9,11 +9,14 @@ const AboutHero = () => {
         backgroundImage: `url(${aboutBanner})`,
       }}
     >
+      {/* overlay */}
       <div className="about-hero-overlay"></div>
 
+      {/* corner lines */}
       <div className="about-hero-corner about-hero-corner-left"></div>
       <div className="about-hero-corner about-hero-corner-right"></div>
 
+      {/* content */}
       <div className="about-hero-content">
         <h1>About Us</h1>
 

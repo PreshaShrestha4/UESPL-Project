@@ -3,29 +3,40 @@
   height: 480px;
   position: relative;
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+
+  padding-top: 173px;
+  gap: 10px;
 
   overflow: hidden;
   box-sizing: border-box;
+
+  /* THIS FIXES THE IMAGE */
+  background-size: 100% auto;
+  background-position: center -110px;
+  background-repeat: no-repeat;
+
+  border: 1px solid #000;
 }
 
-/* OVERLAY */
+/* DARK OVERLAY */
+
 .about-hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+
+  background: #000;
+  opacity: 0.52;
 }
 
 /* CONTENT */
+
 .about-hero-content {
   position: relative;
   z-index: 2;
+
   text-align: center;
   color: white;
 }
@@ -34,39 +45,46 @@
   font-size: 72px;
   font-family: "Times New Roman", serif;
   font-weight: 700;
-  margin-bottom: 26px;
-  letter-spacing: 1px;
+
+  margin-bottom: 28px;
 }
 
 .about-hero-content p {
   font-size: 24px;
-  font-weight: 400;
 }
 
 .about-hero-content span {
-  margin: 0 12px;
-  color: #d9d9d9;
+  margin: 0 10px;
 }
 
-/* CORNERS */
+/* WHITE CORNERS */
+
 .about-hero-corner {
   position: absolute;
+
   width: 90px;
   height: 90px;
-  border-color: white;
+
+  z-index: 2;
+
   border-style: solid;
+  border-color: white;
 }
 
-/* LEFT CORNER */
+/* LEFT */
+
 .about-hero-corner-left {
-  top: 120px;
-  left: 95px;
+  top: 210px;
+  left: 90px;
+
   border-width: 4px 0 0 4px;
 }
 
-/* RIGHT CORNER */
+/* RIGHT */
+
 .about-hero-corner-right {
-  top: 120px;
-  right: 95px;
+  top: 210px;
+  right: 90px;
+
   border-width: 4px 4px 0 0;
 }
