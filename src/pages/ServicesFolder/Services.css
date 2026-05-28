@@ -1,0 +1,126 @@
+.services {
+  width: 100%;
+  padding: 80px 0;
+  background: #f5f5f5;
+}
+
+.services-top {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services-top h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+.services-top p {
+  width: 780px;
+  margin: auto;
+
+  font-size: 18px;
+  line-height: 32px;
+  color: #666;
+}
+
+/* GRID */
+.services-grid {
+  width: 1440px;
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* BIG CARD */
+.service-card {
+  width: 394px;
+  height: 503px;
+
+  border-radius: 16px;
+  border: 0.93px solid #000;
+
+  overflow: hidden;
+  position: relative;
+
+  padding-top: 233px;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-sizing: border-box;
+}
+
+/* SMALL DARK BOX */
+.service-overlay {
+  width: 346px;
+  height: 270px;
+
+  background: #101c32;
+
+  border-radius: 16px;
+  border: 1px solid #ffffff;
+
+  padding-top: 34px;
+  padding-right: 14px;
+  padding-bottom: 40px;
+  padding-left: 13px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  box-sizing: border-box;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* TITLE */
+.service-overlay h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38px;
+
+  color: #fff;
+  margin: 0;
+}
+
+/* TEXT */
+.service-overlay p {
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #f1f1f1;
+  margin: 0;
+}
+
+/* BUTTON */
+.service-overlay button {
+  margin-top: auto;
+
+  background: transparent;
+  border: none;
+
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  cursor: pointer;
+
+  width: 100%;
+}
