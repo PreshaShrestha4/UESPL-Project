@@ -120,3 +120,83 @@
     transform: translateX(-30%);
   }
 }
+@media (max-width: 992px) {
+  .bank-section {
+    padding: 50px 0;
+  }
+
+  .bank-title {
+    gap: 60px;
+    margin-bottom: 40px;
+  }
+
+  .bank-title h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .line {
+    width: 80px;
+  }
+
+  .bank-logo-box {
+    width: 200px;
+    height: 60px;
+  }
+
+  .slider-track {
+    gap: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bank-title {
+    gap: 25px;
+  }
+
+  .bank-title h2 {
+    font-size: 20px;
+  }
+
+  .line {
+    width: 50px;
+  }
+
+  .bank-logo-box {
+    width: 160px;
+    height: 50px;
+  }
+
+  .slider-track {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bank-section {
+    padding: 40px 0;
+  }
+
+  .bank-title {
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .bank-title h2 {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  .line {
+    width: 30px;
+  }
+
+  .bank-logo-box {
+    width: 120px;
+    height: 40px;
+  }
+
+  .slider-track {
+    gap: 18px;
+  }
+}
