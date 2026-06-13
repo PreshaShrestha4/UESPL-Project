@@ -132,3 +132,95 @@
   border: 1px solid black;
   object-fit: cover;
 }
+@media (max-width: 992px) {
+  .about {
+    padding: 70px 40px 0;
+  }
+
+  .about h2 {
+    font-size: 40px;
+  }
+
+  .about-content {
+    margin-top: 100px;
+  }
+
+  .stats {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    min-width: auto;
+
+    margin: 0 auto 50px;
+  }
+
+  .images {
+    gap: 40px;
+  }
+
+  .images img:first-child,
+  .images img:last-child {
+    width: 380px;
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 20px 0;
+  }
+
+  .about h2 {
+    font-size: 34px;
+  }
+
+  .images {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .stats {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 25px;
+    gap: 20px;
+  }
+
+  .images img:first-child,
+  .images img:last-child {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .stats {
+    padding: 20px;
+  }
+
+  .box h3 {
+    font-size: 28px;
+  }
+
+  .box p {
+    font-size: 14px;
+  }
+
+  .about button {
+    width: 100%;
+    max-width: 220px;
+  }
+}
