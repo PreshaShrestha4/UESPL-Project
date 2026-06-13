@@ -187,3 +187,120 @@
 .company-box h3 span {
   display: block;
 }
+
+@media (max-width: 1024px) {
+  .contact-left h1 {
+    font-size: 56px;
+  }
+
+  .image-stack {
+    width: 500px;
+    height: 500px;
+  }
+
+  .back {
+    width: 230px;
+    height: 360px;
+  }
+
+  .middle {
+    width: 230px;
+    height: 430px;
+    left: 120px;
+  }
+
+  .front {
+    width: 230px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .contact-left {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contact-title {
+    justify-content: center;
+  }
+
+  .contact-left h1 {
+    font-size: 48px;
+  }
+
+  .image-stack {
+    width: 100%;
+    max-width: 340px;
+    height: 420px;
+    padding-left: 0;
+  }
+
+  .back {
+    width: 150px;
+    height: 250px;
+    left: 0;
+  }
+
+  .middle {
+    width: 150px;
+    height: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .front {
+    width: 150px;
+    height: 400px;
+    right: 0;
+  }
+
+  .bottom-box {
+    flex-direction: column;
+  }
+
+  .project-box,
+  .company-box {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding-top: 50px;
+  }
+
+  .contact-title p {
+    font-size: 24px;
+  }
+
+  .contact-left h1 {
+    font-size: 34px;
+  }
+
+  .project-box {
+    padding: 30px 20px;
+  }
+
+  .project-box h2 {
+    font-size: 24px;
+  }
+
+  .company-box {
+    padding: 25px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .company-box h3 {
+    width: 100%;
+    font-size: 18px;
+  }
+}

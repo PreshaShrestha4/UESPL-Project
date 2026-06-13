@@ -250,3 +250,96 @@
 .connect-socials svg:hover {
   transform: translateY(-4px);
 }
+@media (max-width: 992px) {
+  .connect-section {
+    padding: 70px 40px;
+  }
+
+  .connect-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .connect-form-box,
+  .connect-info-box {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .connect-heading h2 {
+    font-size: 36px;
+  }
+
+  .connect-heading h3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .connect-section {
+    padding: 60px 20px;
+  }
+
+  .connect-heading h2 {
+    font-size: 30px;
+  }
+
+  .connect-heading h3 {
+    font-size: 24px;
+  }
+
+  .connect-form-box,
+  .connect-info-box {
+    padding: 25px;
+  }
+
+  .connect-info-box h2 {
+    font-size: 32px;
+  }
+
+  .connect-info-box > p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .connect-heading h2 {
+    font-size: 24px;
+  }
+
+  .connect-heading h3 {
+    font-size: 20px;
+  }
+
+  .connect-form input,
+  .connect-form textarea {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  .connect-form button {
+    width: 100%;
+  }
+
+  .connect-info-box h2 {
+    font-size: 26px;
+  }
+
+  .info-item {
+    gap: 12px;
+    margin-bottom: 25px;
+  }
+
+  .info-icon {
+    font-size: 20px;
+  }
+
+  .info-item h4 {
+    font-size: 16px;
+  }
+
+  .connect-socials {
+    gap: 16px;
+    font-size: 24px;
+  }
+}
