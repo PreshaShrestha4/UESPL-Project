@@ -8,9 +8,9 @@
 .why-header {
   max-width: 1200px;
   margin: 0 auto 55px;
+
   margin-right: 50px;
 }
-
 .why-header h2 {
   font-size: 42px;
   font-weight: 700;
@@ -125,27 +125,109 @@
   }
 }
 
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .why-section {
+    padding: 50px 30px;
+  }
+
+  .why-header {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .why-header h2 {
+    font-size: 36px;
+  }
+
+  .why-container {
+    gap: 40px;
+  }
+
+  .why-image img {
+    width: 320px;
+    height: 450px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
 @media (max-width: 768px) {
   .why-section {
     padding: 40px 20px;
   }
 
+  .why-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
   .why-header h2 {
-    font-size: 32px;
+    font-size: 30px;
+  }
+
+  .why-header p {
+    font-size: 14px;
   }
 
   .why-column {
     flex-direction: column;
+    gap: 25px;
   }
 
   .why-card {
     width: 100%;
     max-width: 320px;
+    min-height: auto;
+  }
+
+  .why-card h3 {
+    font-size: 20px;
+  }
+
+  .why-card p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .card-icon {
+    width: 80px;
+    margin-left: -15px;
   }
 
   .why-image img {
     width: 100%;
-    max-width: 350px;
+    max-width: 320px;
     height: auto;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .why-header h2 {
+    font-size: 24px;
+  }
+
+  .why-card {
+    padding: 18px;
+  }
+
+  .why-card h3 {
+    font-size: 18px;
+  }
+
+  .why-card p {
+    font-size: 14px;
+  }
+
+  .card-icon {
+    width: 65px;
+    margin-left: 0;
+  }
+
+  .why-image img {
+    max-width: 280px;
   }
 }

@@ -156,3 +156,112 @@
 
   margin: 0;
 }
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .special-top {
+    height: 450px;
+  }
+
+  .special-title-wrapper h2 {
+    font-size: 42px;
+  }
+
+  .corner-line {
+    width: 90px;
+    height: 90px;
+  }
+
+  .message-box {
+    padding: 35px 40px;
+  }
+
+  .message-box p {
+    font-size: 18px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .special-top {
+    height: 400px;
+  }
+
+  .special-title-wrapper {
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+
+  .special-title-wrapper h2 {
+    font-size: 34px;
+  }
+
+  .corner-line {
+    width: 60px;
+    height: 60px;
+  }
+
+  .about-btn {
+    font-size: 18px;
+    padding: 12px 28px;
+  }
+
+  .special-bottom {
+    height: 280px;
+  }
+
+  .message-box {
+    top: -60px;
+    padding: 30px;
+  }
+
+  .message-box p {
+    font-size: 16px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .special-top {
+    height: 350px;
+  }
+
+  .special-title-wrapper {
+    gap: 15px;
+  }
+
+  .special-title-wrapper h2 {
+    font-size: 26px;
+  }
+
+  .corner-line {
+    width: 40px;
+    height: 40px;
+    border-width: 4px;
+  }
+
+  .about-btn {
+    width: 100%;
+    max-width: 220px;
+
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .special-bottom {
+    height: 320px;
+  }
+
+  .message-box {
+    top: -50px;
+    width: 95%;
+    padding: 20px;
+  }
+
+  .message-box p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}

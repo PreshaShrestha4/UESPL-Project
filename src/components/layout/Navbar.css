@@ -112,3 +112,68 @@
 .contact-btn:hover {
   background: #ddd;
 }
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 25px;
+  }
+
+  .contact-btn {
+    padding: 10px 20px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .contact-btn {
+    padding: 10px 20px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 15px 0;
+  }
+
+  .logo-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .logo-text h2 {
+    font-size: 12px;
+  }
+
+  .logo-text p {
+    font-size: 10px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}

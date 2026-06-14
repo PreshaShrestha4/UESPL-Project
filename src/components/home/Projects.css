@@ -181,3 +181,96 @@
 .view-btn:hover {
   transform: translateY(-2px);
 }
+
+@media (max-width: 1024px) {
+  .projects-section {
+    padding: 80px 40px;
+  }
+
+  .projects-header h2 {
+    font-size: 36px;
+  }
+
+  .projects-text {
+    font-size: 18px;
+  }
+
+  .project-card {
+    width: 320px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 70px 20px;
+  }
+
+  .projects-header {
+    gap: 15px;
+  }
+
+  .projects-header h2 {
+    font-size: 30px;
+  }
+
+  .title-line {
+    width: 80px;
+  }
+
+  .projects-text {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .project-card {
+    width: 280px;
+    height: 340px;
+  }
+
+  .slider-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .view-btn {
+    font-size: 18px;
+    padding: 14px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .projects-header h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .title-line {
+    width: 60px;
+  }
+
+  .projects-text {
+    font-size: 15px;
+  }
+
+  .project-card {
+    width: 240px;
+    height: 300px;
+  }
+
+  .slider-btn {
+    display: none;
+  }
+
+  .view-btn {
+    width: 100%;
+    max-width: 250px;
+    font-size: 16px;
+  }
+}

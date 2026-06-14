@@ -62,3 +62,92 @@
   border-right: 6px solid white;
   border-radius: 0 6px 0 0;
 }
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .projects-hero {
+    height: 550px;
+  }
+
+  .projects-content {
+    gap: 120px;
+  }
+
+  .text h1 {
+    font-size: 56px;
+  }
+
+  .text p {
+    font-size: 20px;
+  }
+
+  .left-line,
+  .right-line {
+    width: 100px;
+    height: 70px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .projects-hero {
+    height: 450px;
+  }
+
+  .projects-content {
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .text h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+
+  .text p {
+    font-size: 18px;
+  }
+
+  .left-line,
+  .right-line {
+    width: 60px;
+    height: 45px;
+
+    border-top-width: 4px;
+  }
+
+  .left-line {
+    border-left-width: 4px;
+  }
+
+  .right-line {
+    border-right-width: 4px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .projects-hero {
+    height: 380px;
+  }
+
+  .projects-content {
+    padding: 0 15px;
+  }
+
+  .text h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .text p {
+    font-size: 15px;
+  }
+
+  .left-line,
+  .right-line {
+    display: none;
+  }
+}
