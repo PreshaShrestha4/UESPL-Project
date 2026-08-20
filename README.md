@@ -28,7 +28,7 @@ A modern and fully responsive website built using React.js and Vite for UESPL. T
 Clone the repository:
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/PreshaShrestha4/UESPL-Project
 ```
 
 Navigate to the project folder:
